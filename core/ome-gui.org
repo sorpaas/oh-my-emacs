@@ -92,7 +92,7 @@ starting point.
    nil 'fullscreen
    (when (not (frame-parameter nil 'fullscreen)) 'fullboth)))
 
-;; (global-set-key (kbd "<f11>") 'ome-toggle-fullscreen)
+(global-set-key (kbd "<f11>") 'ome-toggle-fullscreen)
 #+END_SRC
 
 * Solarized Color Theme
@@ -133,6 +133,10 @@ theme.
   (setq solarized-emphasize-indicators nil)
 
   (setq x-underline-at-descent-line t)
+
+  (setq solarized-scale-org-headlines nil)
+
+  (setq solarized-use-variable-pitch nil)
 
   (ad-enable-advice 'load-theme 'around 'ome-load-theme)
   (ad-activate 'load-theme)
