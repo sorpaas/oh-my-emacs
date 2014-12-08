@@ -1,0 +1,32 @@
+#+TITLE: Oh My Emacs Docker
+#+OPTIONS: toc:2 num:nil ^:nil
+
+This is part of the [[https://github.com/xiaohanyu/oh-my-emacs][oh-my-emacs]].
+
+* El-get packages
+  :PROPERTIES:
+  :CUSTOM_ID: sml-el-get-packages
+  :END:
+
+#+NAME: sml-el-get-packages
+#+CAPTION: El-get packages for ome-sml module
+|              | Status   | Description                                       |
+|--------------+----------+---------------------------------------------------|
+| dockerfile-mode | Required | This is a package for developing Dockerfile in Emacs |
+
+* dockerfile-mode
+  :PROPERTIES:
+  :CUSTOM_ID: sml-mode
+  :END:
+
+SML Mode is an extension to Emacs that is not Emacs itself or SML/NJ itself.
+It displays SML code nicely with syntax coloring and clean indentation, and
+provides a way to run SML from within Emacs. The website is:
+http://www.iro.umontreal.ca/~monnier/elisp/
+
+#+NAME: sml-mode
+#+BEGIN_SRC emacs-lisp
+(defun ome-dockerfile-mode-setup ())
+
+(ome-install 'dockerfile-mode)
+#+END_SRC

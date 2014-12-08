@@ -62,6 +62,7 @@ inversion of gas-comment-region"
           (delete-char 1))
       (next-line))
     (goto-char end)))
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

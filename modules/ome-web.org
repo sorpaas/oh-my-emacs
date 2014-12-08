@@ -167,3 +167,11 @@ little [[http://blog.gabrielsaldana.org/easy-css-editing-with-emacs/][easier]] b
 
 (ome-install 'rainbow-mode)
 #+END_SRC
+* scss-mode
+
+#+NAME: scss-mode
+#+BEGIN_SRC emacs-lisp
+(defun ome-scss-mode-setup ())
+
+(ome-install 'scss-mode)
+#+END_SRC
